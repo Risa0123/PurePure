@@ -7,7 +7,7 @@ matplotlib.use('Agg')
 import streamlit as st # フロントエンドを扱うstreamlitの機能をインポート
 
 #matplotlibで日本語を記述
-matplotlib.rcParams['font.family'] = 'MS Gothic'  # Windowsの場合
+matplotlib.rcParams['font.family'] = 'Noto Sans JP' 
 
 # CSV ファイルの読み込み ここは毎日更新するように改造
 file_path = 'https://raw.githubusercontent.com/Risa0123/PurePure/main/data_20230925_120000.csv'
@@ -235,9 +235,9 @@ def scatter_walking_time_fee():
     ax.set_xlabel('Walking Time from JR Akabane (min)')
     ax.set_ylabel('Rent Fee (x10,000 JPY)')
     ax.set_title('Relationship between Walking Time from JR Akabane and Rent Fee')
-    ax.set_xlabel('赤羽駅からの徒歩時間(分)', fontname="Arial")  # X軸のラベルを変更
-    ax.set_ylabel('賃貸料（円)', fontname="Arial")  # Y軸のラベルを変更
-    ax.set_title(u'賃貸料と駅からの時間の関係', fontname="Arial")  # タイトルを変更
+    ax.set_xlabel('赤羽駅からの徒歩時間(分)', fontname="Noto Sans JP")  # X軸のラベルを変更
+    ax.set_ylabel('賃貸料（円)', fontname="Noto Sans JP")  # Y軸のラベルを変更
+    ax.set_title(u'賃貸料と駅からの時間の関係', fontname="Noto Sans JP")  # タイトルを変更
     ax.set_ylim([0, 40])
     st.pyplot(fig)
     plt.clf()  # グラフの状態をクリア
@@ -249,9 +249,9 @@ def scatter_walking_time_menseki():
     ax.set_xlabel('Walking Time from JR Akabane (min)')
     ax.set_ylabel('Area (m^2)')
     ax.set_title('Relationship between Walking Time from JR Akabane and Area')
-    ax.set_xlabel('赤羽駅からの徒歩時間(分)', fontname="MS Gothic")  # X軸のラベルを変更
-    ax.set_ylabel('部屋面積（m2)', fontname="MS Gothic")  # Y軸のラベルを変更
-    ax.set_title(u'部屋の広さと駅からの時間の関係', fontname="MS Gothic")  # タイトルを変更
+    ax.set_xlabel('赤羽駅からの徒歩時間(分)', fontname="Noto Sans JP")  # X軸のラベルを変更
+    ax.set_ylabel('部屋面積（m2)', fontname="Noto Sans JP")  # Y軸のラベルを変更
+    ax.set_title(u'部屋の広さと駅からの時間の関係', fontname="Noto Sans JP")  # タイトルを変更
     ax.set_ylim([0, 300])
     st.pyplot(fig)
     plt.clf()  # グラフの状態をクリア
@@ -263,9 +263,9 @@ def scatter_years_built_fee():
     ax.set_xlabel('Years Built')
     ax.set_ylabel('Rent Fee (x10,000 JPY)')
     ax.set_title('Relationship between Years Built and Rent Fee')
-    ax.set_xlabel('築年数', fontname="MS Gothic")  # X軸のラベルを変更
-    ax.set_ylabel('賃貸料(円)', fontname="MS Gothic")  # Y軸のラベルを変更
-    ax.set_title(u'築年数と賃貸料の関係', fontname="MS Gothic")  # タイトルを変更
+    ax.set_xlabel('築年数', fontname="Noto Sans JP")  # X軸のラベルを変更
+    ax.set_ylabel('賃貸料(円)', fontname="Noto Sans JP")  # Y軸のラベルを変更
+    ax.set_title(u'築年数と賃貸料の関係', fontname="Noto Sans JP")  # タイトルを変更
       # フォントサイズを指定
     fontsize = 16
 
@@ -280,9 +280,9 @@ def boxplot_layout_walking_time():
     ax.set_xlabel('Layout (Madori)')
     ax.set_ylabel('Walking Time from JR Akabane (min)')
     ax.set_title('Relationship between Layout and Walking Time from JR Akabane')
-    ax.set_xlabel('間取り', fontname="MS Gothic")  # X軸のラベルを変更
-    ax.set_ylabel('赤羽駅からの徒歩時間(分)', fontname="MS Gothic")  # Y軸のラベルを変更
-    ax.set_title(u'部屋の間取りと駅からの時間の関係', fontname="MS Gothic")  # タイトルを変更
+    ax.set_xlabel('間取り', fontname="Noto Sans JP")  # X軸のラベルを変更
+    ax.set_ylabel('赤羽駅からの徒歩時間(分)', fontname="Noto Sans JP")  # Y軸のラベルを変更
+    ax.set_title(u'部屋の間取りと駅からの時間の関係', fontname="Noto Sans JP")  # タイトルを変更
           # フォントサイズを指定
     fontsize = 16
     st.pyplot(fig)
@@ -295,9 +295,9 @@ def boxplot_layout_fee():
     ax.set_xlabel('Layout (Madori)')
     ax.set_ylabel('Rent Fee (x10,000 JPY)')
     ax.set_title('Relationship between Layout and Rent Fee')
-    ax.set_xlabel('間取り', fontname="MS Gothic")  # X軸のラベルを変更
-    ax.set_ylabel('賃貸料(円)', fontname="MS Gothic")  # Y軸のラベルを変更
-    ax.set_title(u'部屋の間取りと賃貸料の関係', fontname="MS Gothic")  # タイトルを変更
+    ax.set_xlabel('間取り', fontname="Noto Sans JP")  # X軸のラベルを変更
+    ax.set_ylabel('賃貸料(円)', fontname="Noto Sans JP")  # Y軸のラベルを変更
+    ax.set_title(u'部屋の間取りと賃貸料の関係', fontname="Noto Sans JP")  # タイトルを変更
       # フォントサイズを指定
     fontsize = 16
     ax.set_ylim([0, 50])
@@ -311,9 +311,9 @@ def scatter_menseki_fee():
     ax.set_xlabel('Area (m^2)')
     ax.set_ylabel('Rent Fee (x10,000 JPY)')
     ax.set_title('Relationship between Area and Rent Fee')
-    ax.set_xlabel('部屋面積（m2)', fontname="MS Gothic")  # X軸のラベルを変更
-    ax.set_ylabel('賃貸料(円)', fontname="MS Gothic")  # Y軸のラベルを変更
-    ax.set_title(u'部屋の広さと賃貸料の関係', fontname="MS Gothic")  # タイトルを変更
+    ax.set_xlabel('部屋面積（m2)', fontname="Noto Sans JP")  # X軸のラベルを変更
+    ax.set_ylabel('賃貸料(円)', fontname="Noto Sans JP")  # Y軸のラベルを変更
+    ax.set_title(u'部屋の広さと賃貸料の関係', fontname="Noto Sans JP")  # タイトルを変更
           # フォントサイズを指定
     
     fontsize = 16
