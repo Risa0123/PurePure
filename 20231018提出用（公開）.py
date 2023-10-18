@@ -5,6 +5,7 @@ import seaborn as sns
 import matplotlib
 matplotlib.use('Agg')
 import streamlit as st # フロントエンドを扱うstreamlitの機能をインポート
+plt.rcParams.update({'font.size': 22})
 
 #matplotlibで日本語を記述
 matplotlib.rcParams['font.family'] = 'Arial'  # Windowsの場合
