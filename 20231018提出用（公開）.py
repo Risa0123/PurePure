@@ -8,7 +8,7 @@ import streamlit as st # フロントエンドを扱うstreamlitの機能をイ�
 plt.rcParams.update({'font.size': 22})
 
 #matplotlibで日本語を記述
-matplotlib.rcParams['font.family'] = 'Arial'  # Windowsの場合
+matplotlib.rcParams['font.family'] = 'MS Gothic'  # Windowsの場合
 
 # CSV ファイルの読み込み ここは毎日更新するように改造
 file_path = 'https://raw.githubusercontent.com/Risa0123/PurePure/main/data_20230925_120000.csv'
