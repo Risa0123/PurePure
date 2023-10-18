@@ -235,9 +235,9 @@ def scatter_walking_time_fee():
     ax.set_xlabel('Walking Time from JR Akabane (min)')
     ax.set_ylabel('Rent Fee (x10,000 JPY)')
     ax.set_title('Relationship between Walking Time from JR Akabane and Rent Fee')
-    ax.set_xlabel('赤羽駅からの徒歩時間(分)', fontname="MS Gothic")  # X軸のラベルを変更
-    ax.set_ylabel('賃貸料（円)', fontname="MS Gothic")  # Y軸のラベルを変更
-    ax.set_title(u'賃貸料と駅からの時間の関係', fontname="MS Gothic")  # タイトルを変更
+    ax.set_xlabel('赤羽駅からの徒歩時間(分)', fontname="Arial")  # X軸のラベルを変更
+    ax.set_ylabel('賃貸料（円)', fontname="Arial")  # Y軸のラベルを変更
+    ax.set_title(u'賃貸料と駅からの時間の関係', fontname="Arial")  # タイトルを変更
     ax.set_ylim([0, 40])
     st.pyplot(fig)
     plt.clf()  # グラフの状態をクリア
