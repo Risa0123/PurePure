@@ -53,10 +53,10 @@ st.markdown("***")
 st.title("あなたへおすすめの物件を最大5件を表示します。")
 
 #アルゴリズム
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-from sklearn.ensemble import GradientBoostingClassifier
+from scikit-learn.ensemble import RandomForestClassifier
+from scikit-learn.model_selection import train_test_split
+from scikit-learn.metrics import accuracy_score
+from scikit-learn.ensemble import GradientBoostingClassifier
 
 # Load the data from the uploaded CSV file
 file_path = 'data_20230925_120000_vs_data_20230926_120000_dif_20231009_141527_dif_20231009_154237.csv'
