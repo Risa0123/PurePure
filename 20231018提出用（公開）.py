@@ -7,25 +7,11 @@ matplotlib.use('Agg')
 import streamlit as st # フロントエンドを扱うstreamlitの機能をインポート
 
 #matplotlibで日本語を記述
-matplotlib.rcParams['font.family'] = 'MS Gothic'  # Windowsの場合
+#matplotlib.rcParams['font.family'] = 'MS Gothic'  # Windowsの場合
 
 # CSV ファイルの読み込み ここは毎日更新するように改造
 file_path = 'https://raw.githubusercontent.com/Risa0123/PurePure/main/data_20230925_120000.csv'
 df = pd.read_csv(file_path)
-
-# フォントの指定
-st.markdown(
-    """
-    <style>
-        .css-1ov9vh9 {
-            font-family: 'MS Gothic', sans-serif;
-            font-size: 20px;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 
 st.title('赤羽注目物件') # タイトル
 st.write("急いで物件を決めないといけない方へPurePure不動産が物件探しをお手伝いします。")
