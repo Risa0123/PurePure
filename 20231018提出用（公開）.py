@@ -10,7 +10,7 @@ import streamlit as st # フロントエンドを扱うstreamlitの機能をイ�
 matplotlib.rcParams['font.family'] = 'MS Gothic'  # Windowsの場合
 
 # CSV ファイルの読み込み ここは毎日更新するように改造
-file_path = 'https://github.com/Risa0123/PurePure/blob/main/data_20230925_120000.csv'
+file_path = 'https://raw.githubusercontent.com/Risa0123/PurePure/blob/main/data_20230925_120000.csv'
 df = pd.read_csv(file_path)
 
 # フォントの指定
@@ -59,7 +59,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.ensemble import GradientBoostingClassifier
 
 # Load the data from the uploaded CSV file
-file_path = 'https://github.com/Risa0123/PurePure/blob/main/data_20230925_120000_vs_data_20230926_120000_dif_20231009_141527_dif_20231009_154237.csv'
+file_path = 'https://raw.githubusercontent.com/Risa0123/PurePure/blob/main/data_20230925_120000_vs_data_20230926_120000_dif_20231009_141527_dif_20231009_154237.csv'
 data = pd.read_csv(file_path)
 
 # Calculate the 'total_fee' by dividing 'management_fee' by 10000 and adding it to 'fee'
